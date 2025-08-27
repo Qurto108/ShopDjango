@@ -15,7 +15,7 @@ class SearchProduct(View):
         
         search_product = Product.objects.filter(
             title__iregex = query
-        ).values('title', 'price')
+        ).values('title', 'price', 'photo')
         
         return JsonResponse({
             'succes': True,
