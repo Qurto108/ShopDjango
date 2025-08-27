@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Главная страница{% endblock  %}
+
+{% block content %}
+    <div class="search-container">
+        <h1 class="search-title">Поиск</h1>
+        
+        <div class="search-box">
+            <input type="text" class="search-input" id="searchInput" placeholder="Введите запрос для поиска...">
+            <button class="search-button" onclick="performSearch()">Найти</button>
+        </div>
+
+        <div class="results" id="results">
+            <!-- Результаты поиска будут отображаться здесь -->
+        </div>
+    </div>
+{% endblock  %}
